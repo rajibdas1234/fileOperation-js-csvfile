@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>employeeDetails</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <script src="Employee.js"></script>
+
+</head>
+
+<body>
+    <div class="">
+        <div class="table-responsive">
+            <div class="container">
+
+                <h1 class="headText">List Of employee Details</h1>
+            </div>
+           
+                <a href="#" id="download" class="btn btn-primary float-right" onclick="resetHref()"> download </a>
+            
+                <!-- <a href="Tcs.csv" class="btn btn-primary"> Download Tcs </a>
+                <a href="bizRuntime.csv" class="btn btn-primary">bizRuntime  </a>
+                <a href="Wipro.csv" class="btn btn-primary">Wipro</a>
+                <a href="MicroSoft.csv" class="btn btn-primary">MicroSoft</a>
+                <a href="Google.csv" class="btn btn-primary">Google</a> -->
+             
+                <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
+            
+           
+            <br />
+            <div class="container">
+                <table class="table  table-hover" id="myTable" >
+                    <thead>
+                        <tr>
+                            <th data-column="EmployeeId" data-order="asc" onclick="sortTable(0)">EmployeeId</th>
+                            <th data-column="EmployeeName" data-order="desc" onclick="sortTable(1)">EmployeeName</th>
+
+                            <th data-column="CompanyName" data-order="desc" onclick="sortTable(2)">CompanyName</th>
+                            <th data-column="CompanyID" data-order="desc" onclick="sortTable(3)">CompanyID</th>
+                            <th data-column="Department" data-order="asc" onclick="sortTable(4)">Department</th>
+                            <th data-column="DESIGNATION" data-order="asc" onclick="sortTable(5)">DESIGNATION</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+
+                    </thead>
+                    </tr>
+                    <tbody id="employee_table"></tbody>
+                </table>
+            </div>
+            <div align="right">
+                <a href="Employee.csv" class="btn btn-primary"> submit </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <script>$(document).ready( function () {
+        $('#employee_table').DataTable();
+    } );</script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> -->
+</body>
+
+</html>

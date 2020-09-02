@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+input {
+    border: 2px solid currentcolor;
+  }
+  input:invalid {
+    border: 2px dashed red;
+  }
+  input:invalid:focus {
+    border: red;
+  }
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.registation {
+    background: #2d85b0;
+    width: 500px;
+    margin: 0px 0px 0px 420px;
+    color: pink;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#registation {
+    margin-left: 0px;
+}
+/* div
+{
+    width: 700;
+    border: none;
+    border-radius: 1px;
+    outline: 0;
+    padding: 0px;
+} */
+
+
+label {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#fname {
+    width: 300;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+#lname {
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#mobilenum {
+    width: 250px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+#email {
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#password{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+#rpassword {
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+span{
+    color: red;
+}
+
+#submit {
+    text-align: center;
+
+  background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        
+}
+       
+div {
+    text-align: center;
+    padding: 20px;
+   color: white
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+   
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
